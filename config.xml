@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.boardroom"
+        versionCode="10" 
+        version   = "1.0.0">
+
+
+    <name>Boardroom+</name>
+
+    <description>
+       An online based interview scheduling service 
+    </description>
+
+    <author href="http://www.boardroom.ng" email="info@boardroom.ng">
+        University of Nigeria
+    </author>
+	
+	<gap:platform name="webos" />
+	<gap:platform name="android" />
+	<gap:platform name="symbian" />
+	<gap:platform name="blackberry" />
+	<gap:platform name="winphone" />
+
+	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    <plugin name="InAppBrowser" />
+    
+	<preference name="orienation" value="default" />
+	<preference name="fullscreen" value="true" />
+	<preference name="android-minSdkVersion" value="7" />
+	<preference name="disable-cursor" value="true" />
+
+
+	<icon src="icon.png" width="64px" height="64"/>
+	<icon src="icon.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icon.png" gap:platform="blackberry" />
+	<icon src="icon.png" gap:platform="winphone" />
+	<icon src="icon.png" gap:platform="webos" />
+	<icon src="icon.png" gap:platform="webos" gap:role="mini" />
+
+    <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+    <plugin name="SplashScreen" value="CDVSplashScreen" />
+    
+	<gap:splash src="splash.png" />
+	<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="splash.png" gap:platform="blackberry" />
+	<gap:splash src="splash.jpg" gap:platform="winphone" />
+	
+	<preference name="splash-screen-duration" value="3000"/>
+
+	<access origin="*" subdomains="true" />
+
+</widget>

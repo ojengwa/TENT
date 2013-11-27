@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    var bRef = null;
+
+    function bLoadStart(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function bLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function bClose(event) {
+         alert(event.type);
+         bRef.removeEventListener('loadstart', bLoadStart);
+         bRef.removeEventListener('loadstop', bLoadStop);
+         bRef.removeEventListener('exit', bClose);
+    }
+
+    function onDeviceReady() {
+         //bRef = window.open('http://www.dcngr.com/tent/', '_blank', 'location=yes');
+         //bRef.addEventListener('loadstart', bLoadStart);
+         //bRef.addEventListener('loadstop', bLoadStop);
+         //bRef.addEventListener('exit', bClose);
+    }
+
+    </script>
+  </head>
+  <body onload="window.open('http://www.dcngr.com/tent/','_blank','location=yes')">
+  </body>
+</html>
