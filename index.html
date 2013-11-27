@@ -18,7 +18,7 @@
     }
 
     function bClose(event) {
-         alert(event.type);
+         alert('You are being logged out from this App');
          bRef.removeEventListener('loadstart', bLoadStart);
          bRef.removeEventListener('loadstop', bLoadStop);
          bRef.removeEventListener('exit', bClose);
@@ -28,7 +28,7 @@
          //bRef = window.open('http://www.dcngr.com/tent/', '_blank', 'location=yes');
          //bRef.addEventListener('loadstart', bLoadStart);
          //bRef.addEventListener('loadstop', bLoadStop);
-         //bRef.addEventListener('exit', bClose);
+         bRef.addEventListener('exit', bClose);
     }
 
     </script>
