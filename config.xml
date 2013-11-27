@@ -32,7 +32,7 @@
 	<preference name="disable-cursor" value="true" />
 
 
-	<icon src="icon.png" width="64px" height="64"/>
+	<icon src="icon.png" width="64px" height="64px"/>
 	<icon src="icon.png" gap:platform="android" gap:density="ldpi" />
 	<icon src="icon.png" gap:platform="android" gap:density="mdpi" />
 	<icon src="icon.png" gap:platform="android" gap:density="hdpi" />
@@ -46,13 +46,12 @@
     <plugin name="SplashScreen" value="CDVSplashScreen" />
     
 	<gap:splash src="splash.png" />
-	<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
 	<gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />
 	<gap:splash src="splash.png" gap:platform="blackberry" />
-	<gap:splash src="splash.jpg" gap:platform="winphone" />
+	<gap:splash src="splash.png" gap:platform="winphone" />
 	
 	<preference name="splash-screen-duration" value="7000"/>
 
